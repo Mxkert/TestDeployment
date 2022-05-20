@@ -1,0 +1,29 @@
+{
+  "name": "test-deployment",
+  "version": "1.0.0",
+  "description": "Amstelveen Repair | Repair Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && yarn install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.19",
+    "mongoose-sequence": "^5.3.1",
+    "multer": "^1.4.2",
+    "react-firebase-hooks": "^5.0.3",
+    "volleyball": "^1.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.0",
+    "nodemon": "^2.0.16"
+  }
+}
